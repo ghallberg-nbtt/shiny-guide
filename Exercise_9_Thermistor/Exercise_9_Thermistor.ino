@@ -32,7 +32,7 @@ void loop() {
   double tempK = log(resistorValue * ((1024.0 / tempReading - 1))); //  Calibrate the ADC value based on our 10Kohm resistor
   tempK = 1 / (0.001129148 + (0.000234125 + (0.0000000876741 * tempK * tempK )) * tempK );  // then convert this number to acutal temperature in Kelvin
 
-  // Is Celsius or Fahrenheit selected?  currentButton = digitalRead(SWITCH); // Read the switch state
+  // Is Celsius or Fahrenheit selected?  
   currentButton = digitalRead(SWITCH); // Read the switch state for C or F
   if (previousButton != currentButton)  // If switch pressed
   {
