@@ -17,5 +17,5 @@ void loop()
 {
   val = analogRead(POT);  // Read the pot value and store is in val
   Serial.println(val);  // Print the value to the serial monitor
-  delay(500); // Wait 1/2 second before next reading
+  delay(500); // Wait 0.5 seconds before next reading
 }
